@@ -116,7 +116,7 @@ git:
     # Type: basic or ssh
     type: ssh
     # Only for SSH authentication:
-    privateKey: /app/ssh/wikijs
+    privateKey: /app/ssh/wikijs.pem
     sslVerify: true
   signature:
     name: Fernando H. E. Bellincanta
