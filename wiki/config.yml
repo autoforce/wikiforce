@@ -108,23 +108,16 @@ db: $(MONGODB_URI)
 # ---------------------------------------------------------------------
 # Git Connection Info
 # ---------------------------------------------------------------------
-
 git:
   url: $(WIKI_GIT_URL)
   branch: $(WIKI_GIT_BRANCH)
   auth:
-
-    # Type: basic or ssh
     type: ssh
-
-    # Only for Basic authentication:
-    username: Ervalhous
-    password: $(WIKI_GIT_PASSWORD)
-
-    # Only for SSH authentication:
     privateKey: /app/ssh/id_rsa
-
     sslVerify: true
+  signature:
+    name: AutoForce
+    email: desenvolvimento@autoforce.com
 
   # Default email to use as commit author
   serverEmail: $(WIKI_SERVER_EMAIL)
