@@ -116,10 +116,10 @@ git:
     # Type: basic or ssh
     type: ssh
     # Only for SSH authentication:
-    privateKey: /app/ssh/wikijs.pem
+    privateKey: /app/ssh/wikijs
     sslVerify: true
   signature:
-    name: Fernando Bellincanta
+    name: Fernando H. E. Bellincanta
     email: ervalhous@hotmail.com
 
   # Default email to use as commit author
