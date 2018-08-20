@@ -119,7 +119,7 @@ git:
     privateKey: /app/ssh/wikijs.pem
     sslVerify: true
   signature:
-    name: AutoForce
+    name: Fernando Bellincanta
     email: ervalhous@hotmail.com
 
   # Default email to use as commit author
