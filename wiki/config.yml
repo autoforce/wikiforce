@@ -117,10 +117,10 @@ git:
     sslVerify: true
   signature:
     name: AutoForce
-    email: desenvolvimento@autoforce.com
+    email: ervalhous@hotmail.com
 
   # Default email to use as commit author
-  serverEmail: desenvolvimento@autoforce.com
+  serverEmail: ervalhous@hotmail.com
 
   # Whether to use user email as author in commits
   showUserEmail: true
