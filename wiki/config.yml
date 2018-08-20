@@ -113,13 +113,14 @@ git:
   url: git@github.com:autoforce/wikiforce.git
   branch: $(WIKI_GIT_BRANCH)
   auth:
-
     # Type: basic or ssh
     type: ssh
     # Only for SSH authentication:
     privateKey: /app/ssh/wikijs.pem
-
     sslVerify: true
+  signature:
+    name: AutoForce
+    email: ervalhous@hotmail.com
 
   # Default email to use as commit author
   serverEmail: $(WIKI_SERVER_EMAIL)
