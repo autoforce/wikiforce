@@ -116,9 +116,6 @@ git:
 
     # Type: basic or ssh
     type: ssh
-
-    # Only for Basic authentication:
-    username: Ervalhous
     # Only for SSH authentication:
     privateKey: /app/ssh/wikijs.pem
 
