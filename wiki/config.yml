@@ -110,17 +110,17 @@ db: $(MONGODB_URI)
 # ---------------------------------------------------------------------
 
 git:
-  url: "git@github.com:autoforce/wikiforce.git"
+  url: git@github.com:autoforce/wikiforce.git
   branch: master
   auth:
     # Type: basic or ssh
     type: ssh
     # Only for SSH authentication:
-    privateKey: "/app/ssh/neowiki"
+    privateKey: /app/ssh/neowiki
     sslVerify: true
   signature:
-    name: "Fernando H. E. Bellincanta"
-    email: "ervalhous@hotmail.com"
+    name: Fernando H. E. Bellincanta
+    email: ervalhous@hotmail.com
 
 # ---------------------------------------------------------------------
 # Features
