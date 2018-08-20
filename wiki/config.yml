@@ -122,7 +122,7 @@ git:
     password: $(WIKI_GIT_PASSWORD)
 
     # Only for SSH authentication:
-    privateKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDwiwMscsrXg2bO7DXiSQZTph7eXtJ7HJRjt2T0zy8cZw2ePyp6LvMHcp1gmrMypb6WyvLdJuk2qVz4tlqWTsTEh+8hqocfoEMsocFWEja1gBNboLu08gRiQP5y/rUkMgAGnH7F6JT5OkPaVS/vsXNentmFvSnGevGfcUTx7TwKELS/Tjt1rUPb7cscnzsc7l+A2WeCNrNx9Jg5JGtOYlltAHKanxqg/oGecAxYwE87Ff4U8rNvr88iOPhi39ri1nvAbFJ5jAJcYWbyaUpqdaguMWK360ZK88R0ImkQ5HC35kPkBpR/8FLne6HpJPTXZ+OG7iML+cNRPZdT0hgAK+OBZ08R5/v/XiQbaSBc+sOVr4Ly8cPK1JzwcCwhAFJhfFiC+JbFKUsF0BxGkJX1YkYLs4mh4MZ5x3BeTS3ClKZQDKa5I0GtmGz4kfOS98qBBL/D2CAhZy/H2L5YZeDoy7wVYLO83NE3FzRLyB8a09CUWcjRlq90qOVgHLEldRLk7w3gtFphvuLOx98FpkIviQYHh7rJt3h9baH7hk2UpbJqy+qqTJnqwn0yl2WhjzHP4qrIx3OI8QycrrNcvspNUPI4Cj40EGE7qCwlKcO3IJZUH/AdRnBYTN8xMmgHb2UbtyGj7RJCfOJJvzE5F2PA8T1UJuAlZADBPnNfQiX/M4Mm2w== ervalhous@hotmail.com
+    privateKey: /app/ssh/id_rsa
 
     sslVerify: true
 
