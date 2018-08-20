@@ -109,8 +109,8 @@ db: $(MONGODB_URI)
 # Git Connection Info
 # ---------------------------------------------------------------------
 git:
-  url: $(WIKI_GIT_URL)
-  branch: $(WIKI_GIT_BRANCH)
+  url: git@github.com:autoforce/wikiforce.git
+  branch: master
   auth:
     type: ssh
     privateKey: /app/ssh/wikijs.pem
@@ -120,10 +120,10 @@ git:
     email: desenvolvimento@autoforce.com
 
   # Default email to use as commit author
-  serverEmail: $(WIKI_SERVER_EMAIL)
+  serverEmail: desenvolvimento@autoforce.com
 
   # Whether to use user email as author in commits
-  showUserEmail: $(WIKI_SHOW_USER_EMAIL)
+  showUserEmail: true
 
 # ---------------------------------------------------------------------
 # Features
