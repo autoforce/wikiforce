@@ -108,16 +108,24 @@ db: $(MONGODB_URI)
 # ---------------------------------------------------------------------
 # Git Connection Info
 # ---------------------------------------------------------------------
+
 git:
-  url: git@github.com:autoforce/wikiforce.git
-  branch: master
+  url: https://github.com/autoforce/wikiforce.git
+  branch: $(WIKI_GIT_BRANCH)
   auth:
-    type: ssh
-    privateKey: /app/ssh/wikijs.pem
-    sslVerify: true
-  signature:
-    name: Wikijs
-    email: ervalhous@hotmail.com
+
+    # Type: basic or ssh
+    type: basic
+
+    # Only for Basic authentication:
+    username: ErvalhouS
+    password: GitHub080658
+
+  # Default email to use as commit author
+  serverEmail: $(WIKI_SERVER_EMAIL)
+
+  # Whether to use user email as author in commits
+  showUserEmail: $(WIKI_SHOW_USER_EMAIL)
 
 # ---------------------------------------------------------------------
 # Features
