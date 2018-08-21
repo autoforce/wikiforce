@@ -24,7 +24,7 @@ Após isso, ao acessar o endereço configurado a aplicação estará disponível
 ## Abri o link, mas deu erro no navegador
 ![Dns](/uploads/uploads/dns.png "Dns")
 
-Quando isso acontece significa que o seu computador não conseguiu se conectar ao endereço de testes. Isso pode significar alguma das seguintes opções:
+Quando isso acontece significa que o seu computador **não conseguiu se conectar ao endereço de testes**. Isso pode significar alguma das seguintes opções:
 
 1. Má configuração no DNS ou no arquivo hosts
 2. O apontamento tenha sido feito para um IP ou endereço inválido
@@ -37,4 +37,8 @@ Quando isso acontece significa que o seu computador não conseguiu se conectar a
 <img src="/uploads/uploads/heroku-nosuchapp.png" alt="Heroku no such app" width="300"/>
 </p>
 
-Seu apontamento DNS foi feito com sucesso, mas você não adicionou o domínio ou o subdomínio à aplicação de testes no Heroku. Volte ao tutorial no inicio dessa página e refaça o passo 4.
+Seu apontamento DNS foi feito com sucesso, mas você não adicionou o domínio ou o subdomínio à aplicação de testes no Heroku. Volte ao tutorial no inicio dessa página e refaça o **passo 4**.
+
+## Apareceu o site da AutoForce, mas era pra ser um site específico
+
+Parabéns, você conseguiu configurar o ambiente de Staging corretamente. O único ponto que faltou é configurar o domínio acessado como sendo de um canal que você deseje visualizar. Acesse a interface administrativa do Autódromo e edite o domínio do canal alvo. Após isso, acesse novamente o endereço, caso aconteça novamente, entre em contato com a equipe de PitStop.
