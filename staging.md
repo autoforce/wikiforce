@@ -24,9 +24,15 @@ Após isso, ao acessar o endereço configurado a aplicação estará disponível
 ## Abri o link, mas deu erro no navegador
 ![Dns](/uploads/uploads/dns.png "Dns")
 
-Quando isso acontece significa que o seu computador não conseguiu se conectar ao endereço de testes. Isso pode significar:
+Quando isso acontece significa que o seu computador não conseguiu se conectar ao endereço de testes. Isso pode significar alguma das seguintes opções:
+
 1. Má configuração no DNS ou no arquivo hosts
-2. O apontamento tenha sido feito para um IP inválido
+2. O apontamento tenha sido feito para um IP ou endereço inválido
 3. O apontamento foi feito para um IP que mudou
 4. O DNS ainda não propagou para a sua área de acesso
 5. Você precisa [expirar o cache de DNS](https://www.keycdn.com/support/dns-cache/) de sua máquina
+
+## Apareceu um erro do Heroku
+![Heroku Nosuchapp](/uploads/uploads/heroku-nosuchapp.png "Heroku Nosuchapp")
+
+Seu apontamento DNS foi feito com sucesso, mas você não adicionou o domínio ou o subdomínio à aplicação de testes no Heroku. Volte ao tutorial no inicio dessa página e refaça o passo 4.
