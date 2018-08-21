@@ -39,6 +39,7 @@ Quando isso acontece significa que o seu computador **não conseguiu se conectar
 
 Seu apontamento DNS foi feito com sucesso, mas você não adicionou o domínio ou o subdomínio à aplicação de testes no Heroku. Volte ao tutorial no inicio dessa página e refaça o **passo 4**.
 
-## Apareceu o site da AutoForce, mas era pra ser um site específico
+## Apareceu o site da AutoForce ou deu um erro 404, mas era pra ser um site específico
+![404](/uploads/uploads/404.png "404")
 
 Parabéns, você conseguiu configurar o ambiente de Staging corretamente. Faltou apenas configurar o canal que você deseja visualizar. Acesse a interface administrativa do Autódromo e edite o domínio do canal alvo. Após isso, acesse novamente o endereço, caso aconteça novamente, entre em contato com a equipe de PitStop.
