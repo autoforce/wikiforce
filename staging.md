@@ -16,5 +16,17 @@ Para fazer uso do ambiente Staging ao máximo, o ideal é que se use uma aplica�
 	 * [Modificar o seu **arquivo hosts**](aindanaotem.com.br/script-hosts), apontando para o IP do link temporário algum endereço. **Vantagem:** Rápido. **Desvantagem:** Funciona apenas localmente. 
 	 * Modificar entradas de DNS do domínio **voltadeapresentacao.com.br**, [apontando algum CNAME](https://community.cloudflare.com/t/how-do-i-add-a-cname-record/59) para o link temporário. **Vantagem:** Funciona mudialmente. **Desvantagem:** Demora na propagação.
 4. Entrar na aplicação criada no passo 2 e adicionar o domínio utilizado no passo 3 em **Settings > Domains and certificates > Add Domain**
+5. **(Opicional)** Entre no administrativo através do link configurado e edite um site para utilizar como domínio um endereço apontado no passo 3
 
 Após isso, ao acessar o endereço configurado a aplicação estará disponível normalmente, lembrando que mudanças afetando esse endereço não afetam o Autódromo e mudanças no Autódromo não afetam esse endereço.
+
+# Troubleshooting
+## Abri o link, mas deu erro no navegador
+![Dns](/uploads/uploads/dns.png "Dns")
+
+Quando isso acontece significa que o seu computador não conseguiu se conectar ao endereço de testes. Isso pode significar:
+1. Má configuração no DNS ou no arquivo hosts
+2. O apontamento tenha sido feito para um IP inválido
+3. O apontamento foi feito para um IP que mudou
+4. O DNS ainda não propagou para a sua área de acesso
+5. Você precisa [expirar o cache de DNS](https://www.keycdn.com/support/dns-cache/) de sua máquina
