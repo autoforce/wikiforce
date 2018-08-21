@@ -44,4 +44,4 @@ Seu apontamento DNS foi feito com sucesso, mas você não adicionou o domínio o
 <img src="/uploads/uploads/404.png" alt="404" width="300"/>
 </p>
 
-Parabéns, você conseguiu configurar o ambiente de Staging corretamente, faltou apenas configurar o canal que você deseja visualizar. Acesse a interface administrativa do Autódromo e edite o domínio do canal alvo. Após isso, acesse novamente o endereço, caso aconteça novamente, entre em contato com a equipe de PitStop.
+Parabéns, você conseguiu configurar o ambiente de Staging corretamente, faltou apenas **configurar o canal que você deseja visualizar**. Acesse a interface administrativa do Autódromo e edite o domínio do canal alvo. Após isso, acesse novamente o endereço, caso aconteça novamente, entre em contato com a equipe de PitStop.
