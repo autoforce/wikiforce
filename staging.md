@@ -33,7 +33,7 @@ Quando isso acontece significa que o seu computador não conseguiu se conectar a
 5. Você precisa [expirar o cache de DNS](https://www.keycdn.com/support/dns-cache/) de sua máquina
 
 ## Apareceu um erro do Heroku
-
+<p>
 <img src="/uploads/uploads/heroku-nosuchapp.png" alt="Heroku no such app" width="200"/>
-
+</p>
 Seu apontamento DNS foi feito com sucesso, mas você não adicionou o domínio ou o subdomínio à aplicação de testes no Heroku. Volte ao tutorial no inicio dessa página e refaça o passo 4.
