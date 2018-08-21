@@ -41,4 +41,4 @@ Seu apontamento DNS foi feito com sucesso, mas você não adicionou o domínio o
 
 ## Apareceu o site da AutoForce, mas era pra ser um site específico
 
-Parabéns, você conseguiu configurar o ambiente de Staging corretamente. O único ponto que faltou é configurar o domínio acessado como sendo de um canal que você deseje visualizar. Acesse a interface administrativa do Autódromo e edite o domínio do canal alvo. Após isso, acesse novamente o endereço, caso aconteça novamente, entre em contato com a equipe de PitStop.
+Parabéns, você conseguiu configurar o ambiente de Staging corretamente. Faltou apenas configurar o canal que você deseja visualizar. Acesse a interface administrativa do Autódromo e edite o domínio do canal alvo. Após isso, acesse novamente o endereço, caso aconteça novamente, entre em contato com a equipe de PitStop.
