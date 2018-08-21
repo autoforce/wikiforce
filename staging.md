@@ -26,9 +26,9 @@ Após isso, ao acessar o endereço configurado a aplicação estará disponível
 
 Quando isso acontece significa que o seu computador **não conseguiu se conectar ao endereço de testes**. Isso pode significar alguma das seguintes opções:
 
-1. Má configuração no DNS ou no arquivo hosts
-2. O apontamento tenha sido feito para um IP ou endereço inválido
-3. O apontamento foi feito para um IP que mudou
+1. Apontamento feito para um IP ou endereço inválido
+2. Apontamento feito para um IP que mudou, ou remanescente de uma configuração anterior
+3. Má configuração no DNS ou no arquivo hosts
 4. O DNS ainda não propagou para a sua área de acesso
 5. Você precisa [expirar o cache de DNS](https://www.keycdn.com/support/dns-cache/) de sua máquina
 
