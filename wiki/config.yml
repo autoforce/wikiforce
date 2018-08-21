@@ -110,17 +110,24 @@ db: $(MONGODB_URI)
 # ---------------------------------------------------------------------
 
 git:
-  url: git@github.com:autoforce/wikiforce.git
-  branch: master
+  url: $(WIKI_GIT_URL)
+  branch: $(WIKI_GIT_BRANCH)
   auth:
+
     # Type: basic or ssh
-    type: ssh
-    # Only for SSH authentication:
-    privateKey: /app/ssh/neowiki
+    type: basic
+
+    # Only for Basic authentication:
+    username: $(WIKI_GIT_USERNAME)
+    password: $(WIKI_GIT_PASSWORD)
+
     sslVerify: true
-  signature:
-    name: Fernando H. E. Bellincanta
-    email: ervalhous@hotmail.com
+
+  # Default email to use as commit author
+  serverEmail: $(WIKI_SERVER_EMAIL)
+
+  # Whether to use user email as author in commits
+  showUserEmail: $(WIKI_SHOW_USER_EMAIL)
 
 # ---------------------------------------------------------------------
 # Features
