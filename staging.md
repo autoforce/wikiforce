@@ -11,7 +11,9 @@ O ambiente Staging nada mais é do que uma cópia quase perfeita do Autódromo r
 Para fazer uso do ambiente Staging ao máximo, o ideal é que se use uma aplicação no Heroku para isso. Isso é necessário para identificar problemas que não aconteceriam caso fosse usada a sua própria máquina na viasualização de novas funcionalidades. O nosso projeto no GitHub já inicializa essas aplicações automaticamente, sendo necessário apenas alguns passos para disponibilizar um link temporário para testes.
 
 1. A **equipe de desenvolvimento** realiza a [criação de um pull request](https://help.github.com/articles/about-pull-requests/), que é um grupo de mudanças no código que fazem parte de uma ou um conjunto de tarefas
+![Pull Request](/uploads/uploads/pull-request.png "Pull Request")
 2. No **Heroku**, após o passo 1, é necessário ativar o *review app* que lança um link temporário permitindo que as pessoas acessem as mudanças realizadas
+
 3. Agora, se for necessário visualizar as alterações em algum site, é necessário apontar um domínio ou subdomínio as opções são:
 	 * [Modificar o seu **arquivo hosts**](/uploads/dominio-interno.sh "Dominio Interno"), apontando para o IP do link temporário algum endereço. **Vantagem:** Rápido. **Desvantagem:** Funciona apenas localmente. 
 	 * Modificar entradas de DNS do domínio **voltadeapresentacao.com.br**, [apontando algum CNAME](https://community.cloudflare.com/t/how-do-i-add-a-cname-record/59) para o link temporário. **Vantagem:** Funciona mudialmente. **Desvantagem:** Demora na propagação.
