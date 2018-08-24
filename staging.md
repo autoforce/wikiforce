@@ -73,5 +73,5 @@ Parabéns, você conseguiu configurar o ambiente de Staging corretamente, faltou
 <img src="/uploads/uploads/nao-consigo-logar.png" alt="Não consigo logar" width="300"/>
 </p>
 
-Algo de errado aconteceu ao clonar o banco de dados do Autódromo, talvez algo de errado tenha acontecido ao executar o **passo 5**. Caso você não consiga realizar a execução do comando, entre em contato com a equipe de PitStop.
+Algo de errado aconteceu ao clonar o banco de dados do Autódromo, talvez algo de errado tenha acontecido ao executar o **passo 5**. Isso pode acontecer também nos casos que a equipe de desenvolvimento tenha atualizado o código na aplicação e não tenha concluído o processo de cópia do banco de dados. Caso você não consiga realizar a execução do comando, entre em contato com a equipe de PitStop.
 
