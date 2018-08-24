@@ -50,7 +50,7 @@ Quando isso acontece significa que o seu computador **não conseguiu se conectar
 4. O DNS ainda não propagou para a sua área de acesso
 5. Você precisa [expirar o cache de DNS](https://www.keycdn.com/support/dns-cache/) de sua máquina
 
- Caso você não consiga realizar o cadastro do endereço, entre em contato com a equipe de PitStop.
+ Caso você não consiga realizar o apontamento DNS ou a execução do script de edição de arquivo hosts, entre em contato com a equipe de PitStop.
 
 ## Apareceu um erro do Heroku
 <p>
