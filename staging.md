@@ -29,9 +29,9 @@ Para fazer uso do ambiente Staging ao máximo, o ideal é que se use uma aplica�
 $ heroku pg:copy autodromo::BLUE DATABASE_URL --app autodromo-teste-pr-(numero do pull request)
 ```
 
-6. **(Opicional)** Entre no administrativo através do link configurado e edite um site para utilizar como domínio um endereço apontado no passo 3
+6.  **(Opicional)** Entre no administrativo através do link configurado e edite um site para utilizar como domínio um endereço apontado no passo 3
 
-Após isso, ao acessar o endereço configurado a aplicação estará disponível normalmente, lembrando que mudanças afetando esse endereço não afetam o Autódromo e mudanças no Autódromo não afetam esse endereço.
+Após isso, ao acessar o endereço configurado a aplicação estará disponível normalmente, lembrando que mudanças afetando esse endereço não afetam o Autódromo e mudanças no Autódromo não afetam esse endereço. Essa característica do ambiente Staging faz com que você possa testar casos extremos de configuração, então pode testar todas as funcionalidades sem medo de quebrar nada nos sites reais. Apesar disso, lembre-se de indicar em conversões de teste que elas não são reais, pois os fluxos de integração e envio de alertas de conversão funcionam normalmente. **Pense nas equipes de vendas que receberão os alertas desses leads!**
 
 # Troubleshooting
 ## Abri o link, mas deu erro no navegador
