@@ -26,7 +26,7 @@ Para fazer uso do ambiente Staging ao máximo, o ideal é que se use uma aplica�
 5. Para ter acesso ao login usado normalmente no Autódromo e conseguir puxar um estado dos sites que copie o da aplicação real é necessário copiar o banco de dados para a aplicação de testes. Para isso é necessário rodar um comando do Heroku em sua máquina, logando em uma conta que tenha acesso a ambas as aplicações:
 
 ```
-$ heroku pg:copy autodromo::BLUE DATABASE_URL --app autodromo-teste-pr-(numero do pull request)
+$ heroku pg:copy autodromo::DATABASE_URL DATABASE_URL --app autodromo-teste-pr-(numero do pull request)
 ```
 
 6.  **(Opicional)** Entre no administrativo através do link configurado e edite um site para utilizar como domínio um endereço apontado no passo 3
