@@ -55,3 +55,11 @@ Seu apontamento DNS foi feito com sucesso, mas você não adicionou o domínio o
 </p>
 
 Parabéns, você conseguiu configurar o ambiente de Staging corretamente, faltou apenas **configurar o canal que você deseja visualizar**. Acesse a interface administrativa do Autódromo e edite o domínio do canal alvo. Após isso, acesse novamente o endereço, caso aconteça novamente, entre em contato com a equipe de PitStop.
+
+## Não consigo logar em uma conta que tenho certeza que existe
+<p>
+<img src="/uploads/uploads/nao-consigo-logar.png" alt="Não consigo logar" width="300"/>
+</p>
+
+Algo de errado aconteceu ao clonar o banco de dados do Autódromo. Entre em contato com o **suporte avançado** caso você não seja membro da equipe.
+
