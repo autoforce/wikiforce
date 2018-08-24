@@ -18,10 +18,8 @@ autodromo-teste-pr-(numero do pull request).herokuapp.com
 ```
 ![Create Review App](/uploads/uploads/create-review-app.png "Create Review App")
 3. Agora, se for necessário visualizar as alterações em algum site, é necessário apontar um domínio ou subdomínio as opções são:
-
 	 * [Modificar o seu **arquivo hosts**](/uploads/dominio-interno.sh "Dominio Interno"), apontando para o IP do link temporário algum endereço. **Vantagem:** Rápido. **Desvantagem:** Funciona apenas localmente. 
 	 * Modificar entradas de DNS do domínio **voltadeapresentacao.com.br**, [apontando algum CNAME](https://community.cloudflare.com/t/how-do-i-add-a-cname-record/59) para o link temporário. **Vantagem:** Funciona mudialmente. **Desvantagem:** Demora na propagação.
-
 4. Entrar na aplicação criada no passo 2 e adicionar o domínio utilizado no passo 3 em **Settings > Domains and certificates > Add Domain**
 ![Dominios Heroku](/uploads/uploads/dominios-heroku.png "Dominios Heroku")
 5. Para ter acesso ao login usado normalmente no Autódromo e conseguir puxar um estado dos sites que copie o da aplicação real é necessário copiar o banco de dados para a aplicação de testes. Para isso é necessário rodar um comando do Heroku em sua máquina, logando em uma conta que tenha acesso a ambas as aplicações:
