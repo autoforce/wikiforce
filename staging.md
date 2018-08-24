@@ -39,6 +39,7 @@ Após isso, ao acessar o endereço configurado a aplicação estará disponível
 
 # Troubleshooting
 ## Abri o link, mas deu erro no navegador
+
 ![Dns](/uploads/uploads/dns.png "Dns")
 
 Quando isso acontece significa que o seu computador **não conseguiu se conectar ao endereço de testes**. Isso pode significar alguma das seguintes opções:
@@ -49,12 +50,14 @@ Quando isso acontece significa que o seu computador **não conseguiu se conectar
 4. O DNS ainda não propagou para a sua área de acesso
 5. Você precisa [expirar o cache de DNS](https://www.keycdn.com/support/dns-cache/) de sua máquina
 
+ Caso você não consiga realizar o cadastro do endereço, entre em contato com a equipe de PitStop.
+
 ## Apareceu um erro do Heroku
 <p>
 <img src="/uploads/uploads/heroku-nosuchapp.png" alt="Heroku no such app" width="300"/>
 </p>
 
-Seu apontamento DNS foi feito com sucesso, mas você não adicionou o domínio ou o subdomínio à aplicação de testes no Heroku. Volte ao tutorial no inicio dessa página e refaça o **passo 4**.
+Seu apontamento DNS foi feito com sucesso, mas você não adicionou o domínio ou o subdomínio à aplicação de testes no Heroku. Volte ao tutorial no inicio dessa página e refaça o **passo 4**. Caso você não consiga realizar o cadastro do endereço, entre em contato com a equipe de PitStop.
 
 ## Apareceu o site da AutoForce ou deu um erro 404, mas era pra ser um site específico
 <p>
@@ -68,5 +71,5 @@ Parabéns, você conseguiu configurar o ambiente de Staging corretamente, faltou
 <img src="/uploads/uploads/nao-consigo-logar.png" alt="Não consigo logar" width="300"/>
 </p>
 
-Algo de errado aconteceu ao clonar o banco de dados do Autódromo. Entre em contato com o **suporte avançado** caso você não seja membro da equipe.
+Algo de errado aconteceu ao clonar o banco de dados do Autódromo, talvez algo de errado tenha acontecido ao executar o **passo 5**. Caso você não consiga realizar a execução do comando, entre em contato com a equipe de PitStop.
 
