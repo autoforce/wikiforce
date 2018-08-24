@@ -12,11 +12,8 @@ Para fazer uso do ambiente Staging ao máximo, o ideal é que se use uma aplica�
 
 1. A **equipe de desenvolvimento** realiza a [criação de um pull request](https://help.github.com/articles/about-pull-requests/), que é um grupo de mudanças no código que fazem parte de uma ou um conjunto de tarefas
 ![Pull Request](/uploads/uploads/pull-request.png "Pull Request")
-2. No **Heroku**, após o passo 1, é necessário ativar o *review app* que lança um link temporário permitindo que as pessoas acessem as mudanças realizadas através de um endereço temporário no formato:
+2. No **Heroku**, após o passo 1, é necessário ativar o *review app* que lança um link temporário permitindo que as pessoas acessem as mudanças realizadas através de um endereço temporário no formato `autodromo-teste-pr-(numero do pull request).herokuapp.com`
 ![Create Review App](/uploads/uploads/create-review-app.png "Create Review App")
-```
-autodromo-teste-pr-(numero do pull request).herokuapp.com
-```
 
 3. Agora, se for necessário visualizar as alterações em algum temos de fazer um apontamento de domínio ou subdomínio, as opções são:
 
