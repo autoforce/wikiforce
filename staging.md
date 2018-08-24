@@ -15,7 +15,7 @@ Para fazer uso do ambiente Staging ao máximo, o ideal é que se use uma aplica�
 2. No **Heroku**, após o passo 1, é necessário ativar o *review app* clicando em **Create Review App** no pull request aberto no passo 1. Isso irá criar um link temporário permitindo que as pessoas acessem as mudanças realizadas com o formato: `autodromo-teste-pr-(numero do pull request).herokuapp.com`
 ![Create Review App](/uploads/uploads/create-review-app.png "Create Review App")
 
-3. Agora, se for necessário visualizar as alterações em algum canal específico, se faz necessária a criação um apontamento de domínio ou subdomínio, as opções são:
+3. Agora, para visualizar as alterações em algum canal específico, se faz necessária a criação um apontamento de domínio ou subdomínio, as opções são:
 
 	 * [Modificar o seu **arquivo hosts**](/uploads/dominio-interno.sh "Dominio Interno"), apontando para o IP do link temporário algum endereço. **Vantagem:** Rápido. **Desvantagem:** Funciona apenas localmente. 
 	 * Modificar entradas de DNS do domínio **voltadeapresentacao.com.br**, [apontando algum CNAME](https://community.cloudflare.com/t/how-do-i-add-a-cname-record/59) para o link temporário. **Vantagem:** Funciona mudialmente. **Desvantagem:** Demora na propagação.
