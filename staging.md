@@ -34,6 +34,8 @@ $ heroku pg:copy autodromo::DATABASE_URL DATABASE_URL --app autodromo-teste-pr-(
 Após isso, ao acessar o endereço configurado a aplicação estará disponível normalmente, lembrando que mudanças afetando esse endereço não afetam o Autódromo e mudanças no Autódromo não afetam esse endereço. Essa característica do ambiente Staging faz com que você possa testar casos extremos de configuração, então pode mudar a vontade os parâmetros do sistema sem medo de quebrar nada nos sites reais. Em casos de detecção de bugs, comportamentos inesperados, ou se você encontrar uma página de erro: **não deixe de reportá-lo para a equipe de suporte**. Desse jeito você estará contribuindo para o desenvolvimento de uma plataforma estável e alinhada com as necessidades.
 
 > Lembre-se de indicar nas conversões realizadas no ambiente Staging de que elas não são reais, pois os fluxos de integração e envio de alertas funcionam normalmente. **Pense nas equipes de vendas que receberão os alertas desses leads!**
+> 
+-----
 
 # Troubleshooting
 ## Abri o link, mas deu erro no navegador
