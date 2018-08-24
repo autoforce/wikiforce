@@ -12,14 +12,23 @@ Para fazer uso do ambiente Staging ao máximo, o ideal é que se use uma aplica�
 
 1. A **equipe de desenvolvimento** realiza a [criação de um pull request](https://help.github.com/articles/about-pull-requests/), que é um grupo de mudanças no código que fazem parte de uma ou um conjunto de tarefas
 ![Pull Request](/uploads/uploads/pull-request.png "Pull Request")
-2. No **Heroku**, após o passo 1, é necessário ativar o *review app* que lança um link temporário permitindo que as pessoas acessem as mudanças realizadas
+2. No **Heroku**, após o passo 1, é necessário ativar o *review app* que lança um link temporário permitindo que as pessoas acessem as mudanças realizadas através de um endereço temporário no formato:
+```
+autodromo-teste-pr-(numero do pull request).herokuapp.com
+```
 ![Create Review App](/uploads/uploads/create-review-app.png "Create Review App")
 3. Agora, se for necessário visualizar as alterações em algum site, é necessário apontar um domínio ou subdomínio as opções são:
+
 	 * [Modificar o seu **arquivo hosts**](/uploads/dominio-interno.sh "Dominio Interno"), apontando para o IP do link temporário algum endereço. **Vantagem:** Rápido. **Desvantagem:** Funciona apenas localmente. 
 	 * Modificar entradas de DNS do domínio **voltadeapresentacao.com.br**, [apontando algum CNAME](https://community.cloudflare.com/t/how-do-i-add-a-cname-record/59) para o link temporário. **Vantagem:** Funciona mudialmente. **Desvantagem:** Demora na propagação.
+
 4. Entrar na aplicação criada no passo 2 e adicionar o domínio utilizado no passo 3 em **Settings > Domains and certificates > Add Domain**
 ![Dominios Heroku](/uploads/uploads/dominios-heroku.png "Dominios Heroku")
-5. **(Opicional)** Entre no administrativo através do link configurado e edite um site para utilizar como domínio um endereço apontado no passo 3
+5. Para ter acesso ao login usado normalmente no Autódromo e conseguir puxar um estado dos sites que copie o da aplicação real é necessário copiar o banco de dados para a aplicação de testes. Para isso é necessário rodar um comando do Heroku em sua máquina, logando em uma conta que tenha acesso a ambas as aplicações:
+```
+$ heroku pg:copy autodromo::BLUE DATABASE_URL --app autodromo-teste-pr-(numero do pull request)
+```
+6. **(Opicional)** Entre no administrativo através do link configurado e edite um site para utilizar como domínio um endereço apontado no passo 3
 
 Após isso, ao acessar o endereço configurado a aplicação estará disponível normalmente, lembrando que mudanças afetando esse endereço não afetam o Autódromo e mudanças no Autódromo não afetam esse endereço.
 
