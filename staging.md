@@ -30,6 +30,11 @@ $ heroku pg:copy autodromo::DATABASE_URL DATABASE_URL --app autodromo-teste-pr-(
 ```
 
   * Esse passo deve ser repetido sempre que o pull request sofrer mudanças, pois o banco reseta no processo de deploy da aplicação.
+  * Caso a alteração contenha uma migração no estado do banco de dados, após rodar esse comando é necessário rodar também:
+
+```
+$ heroku run rake db:migrate --app autodromo-teste-pr-(numero do pull request)
+```
 
 6.  **(Opicional)** Entre no administrativo através do link configurado e edite um site para utilizar como domínio um endereço apontado no passo 3
 
