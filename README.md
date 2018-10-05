@@ -1,16 +1,17 @@
-# Heroku Deploy for Wiki.js
+# WikiForce
 
-This repo is an Heroku app definition for Wiki.js.  
-For information about Wiki.js, including detailed installation steps, read the following links:
+Esse repositório é a base para a nossa wiki. As alterações feitas aqui refletem diretamente nas páginas da base de conhecimento. O processo de atualização pode ser feito de duas maneiras:
 
-- [Official Website](https://wiki.js.org/)
-- [Installation Guide](https://wiki.js.org/get-started.html)
-- [GitHub Repository](https://github.com/Requarks/wiki)
+1. Alterando diretamente o repositório. O WikiForce sincronizará os links automaticamente.
+2. Logando na WikiForce e editando ou criando novas postagens por lá.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/requarks/wiki-heroku)
+Os nomes dos arquivos aqui refletem o slug usado na base de conhecimento e a única diferença desses arquivos para o markdown que existe no GitHub são os comentários no cabeçalho que refletem o título e a descrição das páginas, o formato desse cabeçalho é:
 
-If you want to modify the configuration beyond what's available through environment variables, then:
-* Clone this repo
-* Make and commit your configuration changes
-* `git remote add heroku https://git.heroku.com/my-wiki.git`
-* `git push heroku`, or if you are on a branch, `git push heroku mybranch:master`
+```
+<!-- TITLE: Título da página -->
+<!-- SUBTITLE: Descrição sobre o conteúdo ou uma legenda -->
+```
+
+---
+
+### AutoForce, Plataforma de Marketing Digital LTDA.
