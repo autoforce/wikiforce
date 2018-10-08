@@ -117,7 +117,7 @@ git:
     type: ssh
 
     # Only for SSH authentication:
-    privateKey: ../wikijs.pem
+    privateKey: /app/wikijs.pem
 
     sslVerify: true
   # Default email to use as commit author
