@@ -12,5 +12,6 @@ Os nomes dos arquivos aqui refletem o slug usado na base de conhecimento e a ún
 <!-- SUBTITLE: Descrição sobre o conteúdo ou uma legenda -->
 ```
 
--------
+---
+
 ### AutoForce, Plataforma de Marketing Digital LTDA.
