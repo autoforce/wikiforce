@@ -134,7 +134,7 @@ git:
 
 features:
   linebreaks: true
-  mathjax: true
+  mathjax: false
 
 # ---------------------------------------------------------------------
 # External Logging
