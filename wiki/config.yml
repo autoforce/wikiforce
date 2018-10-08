@@ -89,8 +89,8 @@ auth:
     enabled: false
     clientID: APP_ID
     clientSecret: APP_SECRET_KEY
-    resource: '00000002-0000-0000-c000-000000000000'
-    tenant: 'YOUR_TENANT.onmicrosoft.com'
+    resource: "00000002-0000-0000-c000-000000000000"
+    tenant: "YOUR_TENANT.onmicrosoft.com"
 
 # ---------------------------------------------------------------------
 # Secret key to use when encrypting sessions
@@ -113,7 +113,6 @@ git:
   url: $(WIKI_GIT_URL)
   branch: $(WIKI_GIT_BRANCH)
   auth:
-
     # Type: basic or ssh
     type: basic
 
@@ -136,7 +135,7 @@ git:
 
 features:
   linebreaks: true
-  mathjax: true
+  mathjax: false
 
 # ---------------------------------------------------------------------
 # External Logging
