@@ -1,6 +1,7 @@
-# DataLayer
+<!-- TITLE: DataLayer -->
+<!-- SUBTITLE: O que é e como usar a Camada de Dados presente nas páginas do Autódromo -->
 
-**DataLayer** é um conjunto de informações do website ou do usuário, sendo responsável pela centralização desses dados e permitindo seu uso por diversas ferramentas de **Marketing Digital**. Essas informações contidas no DataLayer servirão para melhor configurar suas campanhas e análises de comportamento de navegação.
+**DataLayer**(ou Camada de Dados) é um conjunto de informações do website ou do usuário, sendo responsável pela centralização desses dados e permitindo seu uso por diversas ferramentas de **Marketing Digital**. Essas informações contidas no DataLayer servirão para melhor configurar suas campanhas e análises de comportamento de navegação.
 
 Normalmente, as informações passadas são definidas pela equipe de **Marketing** em conjunto com a equipe de **Negócios**, sendo importante também o envolvimento da equipe de **Desenvolvimento** para uma avaliação da viabilidade da coleta de informações.
 
