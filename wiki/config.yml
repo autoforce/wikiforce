@@ -114,12 +114,12 @@ git:
   branch: $(WIKI_GIT_BRANCH)
   auth:
     # Type: basic or ssh
-    type: basic
+    type: ssh
 
-    # Only for Basic authentication:
-    username: $(WIKI_GIT_USERNAME)
-    password: $(WIKI_GIT_PASSWORD)
+    # Only for SSH authentication:
+    privateKey: /app/git_rsa
 
+    # Check for valid SSL certificate
     sslVerify: true
 
   # Default email to use as commit author
