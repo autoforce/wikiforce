@@ -114,12 +114,17 @@ git:
   branch: $(WIKI_GIT_BRANCH)
   auth:
     # Type: basic or ssh
-    type: ssh
+    type: basic
+
+    # Only for Basic authentication:
+    username: $(WIKI_GIT_USERNAME)
+    password: $(WIKI_GIT_PASSWORD)
 
     # Only for SSH authentication:
-    privateKey: /app/wikijs.pem
+    privateKey: /etc/wiki/keys/git.pem
 
     sslVerify: true
+
   # Default email to use as commit author
   serverEmail: $(WIKI_SERVER_EMAIL)
 
@@ -133,7 +138,7 @@ git:
 
 features:
   linebreaks: true
-  mathjax: false
+  mathjax: true
 
 # ---------------------------------------------------------------------
 # External Logging
