@@ -120,7 +120,6 @@ git:
     privateKey: ../wikijs.pem
 
     sslVerify: true
-
   # Default email to use as commit author
   serverEmail: $(WIKI_SERVER_EMAIL)
 
