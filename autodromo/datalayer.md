@@ -74,3 +74,8 @@ Exemplo de um clique em um **elemento de galeria**:
 ```
  { event: { name: "openGallery", value: "comprar-1-0_1a2e99a89d.png" } }
 ```
+
+# Conheça mais sobre a estrutura dos objetos de DataLayer
+
+- [DataLayer - Veículos Novos](/autodromo/datalayer/novos)
+- [DataLayer - Veículos Seminovos](/autodromo/datalayer/seminovos)
