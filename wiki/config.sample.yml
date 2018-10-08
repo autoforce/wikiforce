@@ -3,24 +3,27 @@
 #######################################################################
 # Full explanation + examples in the documentation:
 # https://docs.requarks.io/wiki/install
+# You can use an ENV variable by using $(ENV_VAR_NAME) as the value
 
 # ---------------------------------------------------------------------
 # Title of this site
 # ---------------------------------------------------------------------
 
-title: WikiForce
+title: Wiki
 
 # ---------------------------------------------------------------------
 # Full public path to the site, without the trailing slash
 # ---------------------------------------------------------------------
+# INCLUDE CLIENT PORT IF NOT 80/443!
 
-host: http://lvh.me:3000
+host: http://localhost
 
 # ---------------------------------------------------------------------
 # Port the main server should listen to (80 by default)
 # ---------------------------------------------------------------------
+# To use process.env.PORT, comment the line below:
 
-port: 3000
+port: 80
 
 # ---------------------------------------------------------------------
 # Data Directories
@@ -42,26 +45,29 @@ uploads:
 # ---------------------------------------------------------------------
 # Site Language
 # ---------------------------------------------------------------------
-# Possible values: en, es, fr, ko, ru or zh
+# Possible values: en, de, es, fa, fr, ja, ko, nl, pt, ru, sr, sv, tr or zh
 
-lang: pt
+lang: en
+
+# Enable for right to left languages (e.g. arabic):
+langRtl: false
 
 # ---------------------------------------------------------------------
 # Site Authentication
 # ---------------------------------------------------------------------
 
-public: true
+public: false
 
 auth:
   defaultReadAccess: false
   local:
     enabled: true
   google:
-    enabled: false
+    enabled: true
     clientId: GOOGLE_CLIENT_ID
     clientSecret: GOOGLE_CLIENT_SECRET
   microsoft:
-    enabled: false
+    enabled: true
     clientId: MS_APP_ID
     clientSecret: MS_APP_SECRET
   facebook:
@@ -74,8 +80,8 @@ auth:
     clientSecret: GITHUB_CLIENT_SECRET
   slack:
     enabled: false
-    clientId: SLACK_CLIENT_ID
-    clientSecret: SLACK_CLIENT_SECRET
+    clientId: 'SLACK_CLIENT_ID'
+    clientSecret: 'SLACK_CLIENT_SECRET'
   ldap:
     enabled: false
     url: ldap://serverhost:389
@@ -87,43 +93,62 @@ auth:
     tlsCertPath: C:\example\root_ca_cert.crt
   azure:
     enabled: false
-    clientID: APP_ID
+    clientId: APP_ID
     clientSecret: APP_SECRET_KEY
-    resource: "00000002-0000-0000-c000-000000000000"
-    tenant: "YOUR_TENANT.onmicrosoft.com"
-
+    resource: '00000002-0000-0000-c000-000000000000'
+    tenant: 'YOUR_TENANT.onmicrosoft.com'
+  oauth2:
+    enabled: false
+    clientId: OAUTH2_CLIENT_ID
+    clientSecret: OAUTH2_CLIENT_SECRET
+    authorizationURL: OAUTH2_AUTH_URL
+    tokenURL: OAUTH2_TOKEN_URL
+  oidc:
+    enabled: false
+    clientId: OPENID_CONNECT_CLIENT_ID
+    clientSecret: OPENID_CONNECT_CLIENT_SECRET
+    issuer: OPENID_CONNECT_ISSUER
+    userInfoUrl: OPENID_CONNECT_USER_INFO_URL
+    authorizationURL: OPENID_CONNECT_AUTHORIZATION_URL
+    tokenURL: OPENID_CONNECT_TOKEN_URL
+    emailClaim: OPENID_CONNECT_EMAIL_CLAIM_PATH
+    usernameClaim: OPENID_CONNECT_USERNAME_CLAIM_PATH
 # ---------------------------------------------------------------------
 # Secret key to use when encrypting sessions
 # ---------------------------------------------------------------------
 # Use a long and unique random string (256-bit keys are perfect!)
 
-sessionSecret: 2f8c2a25cfe547711b89c39486b721ec3a70d10c44b885a4ed700fec1f5be610
+sessionSecret: 1234567890abcdefghijklmnopqrstuvxyz
 
 # ---------------------------------------------------------------------
 # Database Connection String
 # ---------------------------------------------------------------------
 
-db: mongodb://heroku_f5nhd0f1:i1nsdmog1d91c5hvstjfsehjed@ds127342.mlab.com:27342/heroku_f5nhd0f1
+db: mongodb://localhost:27017/wiki
 
 # ---------------------------------------------------------------------
 # Git Connection Info
 # ---------------------------------------------------------------------
 
 git:
-  url: git@github.com:autoforce/wikiforce.git
+  url: https://github.com/Organization/Repo
   branch: master
   auth:
+
     # Type: basic or ssh
     type: ssh
 
-    # Only for SSH authentication:
-    privateKey: ../git_rsa
+    # Only for Basic authentication:
+    username: marty
+    password: MartyMcFly88
 
-    # Check for valid SSL certificate
+    # Only for SSH authentication:
+    privateKey: /etc/wiki/keys/git.pem
+
     sslVerify: true
 
   # Default email to use as commit author
-  serverEmail: desenvolvimento@autoforce.com
+  serverEmail: marty@example.com
 
   # Whether to use user email as author in commits
   showUserEmail: true
@@ -135,7 +160,7 @@ git:
 
 features:
   linebreaks: true
-  mathjax: false
+  mathjax: true
 
 # ---------------------------------------------------------------------
 # External Logging
@@ -147,3 +172,16 @@ externalLogging:
   papertrail: false
   rollbar: false
   sentry: false
+
+# ---------------------------------------------------------------------
+# Color Theme
+# ---------------------------------------------------------------------
+
+theme:
+  primary: indigo
+  alt: blue-grey
+  viewSource: all # all | write | false
+  footer: blue-grey
+  code:
+    dark: true
+    colorize: true
