@@ -1,7 +1,7 @@
 <!-- TITLE: Métricas de UX -->
 <!-- SUBTITLE: Descrição dos eventos e dos dados enviados para o Analytics -->
 
-# Dimensões
+### Dimensões
 As dimensões são atributos personalizados dos dados enviados para o Google Analytics. Por exemplo, a dimensão "Produto" indica o produto da Autoforce em que a sessão iniciou. Atualmente as três dimensões configuradas são:
 - Produto
 - Domínio
