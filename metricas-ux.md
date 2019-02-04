@@ -7,7 +7,7 @@ As dimensões são atributos personalizados dos dados enviados para o Google Ana
 - Domínio
 - Controller 
 #### Produto
-A dimensão de produto podem ser organizadas nos seguinte itens:
+A dimensão de produto pode ser organizada nos seguintes itens:
 - Portal de Seminovos
 - Site Padrão
 - Site Viasul
